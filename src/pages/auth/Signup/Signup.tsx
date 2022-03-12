@@ -11,9 +11,9 @@ import {validation as createUserSchema} from './validation';
 type CreateUserInput = TypeOf<typeof createUserSchema>;
 
 function RegisterPage() {
-    const [registerError, setRegisterError] = useState(null);
+    const [, setRegisterError] = useState(null);
     const navigate = useNavigate();
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading] = useState(false);
     const {
         control,
         register,

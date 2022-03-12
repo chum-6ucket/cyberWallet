@@ -15,10 +15,10 @@ type CreateSessionInput = TypeOf<typeof createSessionSchema>;
 
 function LoginPage() {
 
-    const {session, setSessionState} = useContext(GlobalStateContext);
-    const [loginError, setLoginError] = useState(null);
+    const {setSessionState} = useContext(GlobalStateContext);
+    const [, setLoginError] = useState(null);
     const navigate = useNavigate();
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading] = useState(false);
 
 
     const {

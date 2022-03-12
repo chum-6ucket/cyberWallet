@@ -9,7 +9,7 @@ import axios from "axios";
 
 const Header: React.FC = () => {
 
-    const [logoutError, setLogoutError] = useState(null);
+    const [, setLogoutError] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
     const size: Size = useWindowSize();
     const {session, setSessionState} = useContext(GlobalStateContext);
